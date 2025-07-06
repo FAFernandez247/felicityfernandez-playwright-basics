@@ -32,3 +32,4 @@ test('Verify login with blank password', async ({ page }) => {
   await expect(page.locator('[data-test="error"]')).toBeVisible();
   await expect(page.locator('[data-test="error"]')).toContainText('Password is required');
 });
+
