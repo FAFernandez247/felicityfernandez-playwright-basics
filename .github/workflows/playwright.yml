@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: Session 11 Playywright Test
 on:
   push:
     branches: [ main, master ]
@@ -18,7 +18,7 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
-      run: npx playwright test
+      run: npm run login-swag-trace 
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:

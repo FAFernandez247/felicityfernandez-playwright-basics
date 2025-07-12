@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "login-swag-trace": "npx playwright test tests/features/session11_act.spec.js --trace on",
+    "login-swag-ui": "npx playwright test tests/features/session11_act.spec.js --ui"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FAFernandez247/felicityfernandez-playwright-basics.git"
