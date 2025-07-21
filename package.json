@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "login-swag-trace": "npx playwright test tests/features/session11_act.spec.js --trace on",
-    "login-swag-ui": "npx playwright test tests/features/session11_act.spec.js --ui"
+    "login-swag-trace": "npx playwright test tests/features/session11_act.spec.js --trace=on",
+    "login-swag-ui": "npx playwright test tests/features/session11_act.spec.js --ui",
+    "auth-setup": "npx playwright test tests/auth.setup.ts --project setup",
+    "e2e-test": "npx playwright test tests/e2e.spec.ts --project e2e --ui"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,8 @@
   "devDependencies": {
     "@playwright/test": "^1.53.1",
     "@types/node": "^24.0.7"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.0"
   }
 }
